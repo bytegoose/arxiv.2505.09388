@@ -4,25 +4,25 @@ Qwen3 MoE Model Simplified Implementation following the technical report
 # Implemented Components:
 
 Core Architecture:
-Decoder-only transformer based on Llama architecture
-RMSNorm for all normalization layers
-SwiGLU activation function in feed-forward networks
-Rotary Positional Embeddings (RoPE) for position encoding
-Grouped Query Attention (GQA) for efficient attention
+1. Decoder-only transformer based on Llama architecture
+2. RMSNorm for all normalization layers
+3. SwiGLU activation function in feed-forward networks
+4. Rotary Positional Embeddings (RoPE) for position encoding
+5. Grouped Query Attention (GQA) for efficient attention
 
 MoE Specifics:
-Configurable number of experts (e.g., 64)
-Top-k expert selection (e.g., 12 experts per token)
-Shared expert that's always activated alongside sparse experts
-MoE layers replace FFN layers at configurable frequency
-Gating mechanism for expert selection
+1. Configurable number of experts (e.g., 64)
+2. Top-k expert selection (e.g., 12 experts per token)
+3. Shared expert that's always activated alongside sparse experts
+4. MoE layers replace FFN layers at configurable frequency
+5. Gating mechanism for expert selection
 
 Key Features:
-Flexible configuration via QwenMoEConfig
-Causal language modeling head
-KV caching for efficient generation
-Proper attention masking
-Model parallelism ready
+1. Flexible configuration via QwenMoEConfig
+2. Causal language modeling head
+3. KV caching for efficient generation
+4. Proper attention masking
+5. Model parallelism ready
 
 # Questions for Clarification:
 
