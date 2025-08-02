@@ -9,12 +9,14 @@ RMSNorm for all normalization layers
 SwiGLU activation function in feed-forward networks
 Rotary Positional Embeddings (RoPE) for position encoding
 Grouped Query Attention (GQA) for efficient attention
+
 MoE Specifics:
 Configurable number of experts (e.g., 64)
 Top-k expert selection (e.g., 12 experts per token)
 Shared expert that's always activated alongside sparse experts
 MoE layers replace FFN layers at configurable frequency
 Gating mechanism for expert selection
+
 Key Features:
 Flexible configuration via QwenMoEConfig
 Causal language modeling head
